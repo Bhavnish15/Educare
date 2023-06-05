@@ -1,0 +1,66 @@
+.container{
+    height: 100vh;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
+.vector-graphics{
+    filter: drop-shadow(0 40px 10px rgba(0,0,0,0.3));
+    animation: vector-animation 1s infinite ease-in-out alternate;
+}
+.BrandBanner > svg{
+
+    color: white;
+    font-size: 3rem;
+    transition: color .3s;
+}
+svg:hover{
+    color: rgb(225, 221, 0);
+    cursor: pointer;
+}
+.container-2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-2 > video{
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    box-shadow: 0 0 10px black;
+    width: 60%;
+    border-radius: 10px;
+    outline: none;
+}
+
+@keyframes vector-animation{
+    to{
+        transform: translateY(-10px);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container-2{
+        height: unset;
+        padding: 4vh 0;
+    }
+    .container-2  video {
+        width: 100%;
+    }
+    .vector-graphics{
+        margin: auto;
+        width: 35%;
+        
+        display: block;
+    }
+}
+
+.course{
+    width:250px;
+    margin-bottom: .5rem;
+    transition: all .5s;
+
+}
+.course:hover{
+    transform: translateY(-10px);
+}
